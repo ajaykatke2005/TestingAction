@@ -25,3 +25,10 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Completed
       run: echo "finished"
+    - uses: frankie567/grafana-annotation-action@v1.0.0
+      with:
+        apiHost: http://localhost:3001
+        apiToken: ${{ AJGRAFANA }}
+        text: Deployment of ${{ github.sha }}
+        dashboardId: 1
+        tags: deployment,github
