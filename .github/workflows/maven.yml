@@ -28,7 +28,7 @@ jobs:
     - uses: frankie567/grafana-annotation-action@v1.0.0
       with:
         apiHost: http://localhost:3001
-        apiToken: ${{ AJGRAFANA }}
+        apiToken: eyJrIjoidldWSnkxQTdHN1d0QWNMbmNuM0FjSW9JTlFvdzRuOEsiLCJuIjoiZ2l0aHViIiwiaWQiOjF9
         text: Deployment of ${{ github.sha }}
         dashboardId: 1
         tags: deployment,github
