@@ -25,7 +25,3 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Completed
       run: echo "finished"
-    - uses: frankie567/grafana-annotation-action@v1.0.0
-      with:
-        apiHost: http://localhost:3001/api/dashboards/home
-        apiToken: eyJrIjoibG9wY1B1NjlYN2F5UzlRR3JxNFhjS2xUVFNtM3FkbzMiLCJuIjoiZ2l0aHViMSIsImlkIjoxfQ==
