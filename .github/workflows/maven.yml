@@ -29,6 +29,3 @@ jobs:
       with:
         apiHost: http://localhost:3001
         apiToken: eyJrIjoibG9wY1B1NjlYN2F5UzlRR3JxNFhjS2xUVFNtM3FkbzMiLCJuIjoiZ2l0aHViMSIsImlkIjoxfQ==
-        text: Deployment of ${{ github.sha }}
-        dashboardId: 1
-        tags: deployment,github
