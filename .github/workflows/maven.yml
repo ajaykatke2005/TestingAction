@@ -5,11 +5,12 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ main ]
+    branches: [ Ajbranch ]
   pull_request:
-    branches: [ main ]
+    branches: [ Ajbranch ]
 
 jobs:
+  job1:
   build:
 
     runs-on: ubuntu-latest
@@ -25,3 +26,13 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Completed
       run: echo "finished"
+    - name: docker
+      run: docker run hello-world
+
+  job2: 
+     runs-on: windows
+     needs: job1
+      - name: Prometheus
+        run: C:\prometheus-2.27.1.windows-amd64\prometheus.exe
+      
+     
