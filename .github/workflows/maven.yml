@@ -29,5 +29,6 @@ jobs:
 
   job2: 
     runs-on: windows
+    needs: job1
     steps: 
-      - run: C:\prometheus-2.27.1.windows-amd64\prometheus.exe     
+      - run: C:\prometheus-2.27.1.windows-amd64\prometheus.exe  --config.file=prometheus.yml   
