@@ -11,8 +11,6 @@ on:
 
 jobs:
   job1:
-  build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -30,9 +28,6 @@ jobs:
       run: docker run hello-world
 
   job2: 
-     runs-on: windows
-     needs: job1
-      - name: Prometheus
-        run: C:\prometheus-2.27.1.windows-amd64\prometheus.exe
-      
-     
+    runs-on: windows
+    steps: 
+      - run: C:\prometheus-2.27.1.windows-amd64\prometheus.exe     
