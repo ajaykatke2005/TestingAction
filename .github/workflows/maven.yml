@@ -23,7 +23,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Completed
-      run: echo "finished"
+      run: echo "completed"
     - name: docker
       run: docker run hello-world
 
