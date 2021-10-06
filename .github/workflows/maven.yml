@@ -3,11 +3,7 @@
 
 name: Java CI with Maven
 
-on:
-  push:
-    branches: [ Ajbranch ]
-  pull_request:
-    branches: [ Ajbranch ]
+on: [push, pull_request]
 
 jobs:
   job1:
@@ -26,9 +22,3 @@ jobs:
       run: echo "completed"
     - name: docker
       run: docker run hello-world
-
-  job2: 
-    runs-on: windows
-    needs: job1
-    steps: 
-      - run: ./C:\prometheus-2.27.1.windows-amd64\prometheus.exe --config.file=prometheus.yml
