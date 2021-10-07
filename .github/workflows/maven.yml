@@ -9,7 +9,7 @@ on:
       - Ajpolicy
   pull_request:
     branches:
-      - Ajpolicy
+      - main
 
 jobs:
   job1:
